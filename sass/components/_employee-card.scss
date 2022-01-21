@@ -18,14 +18,15 @@
   background-color: var(--bacnd-color);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.employee__link:hover,
-.employee__link:focus {
-  background-color: var(--secondary-color);
-}
-.employee__link:hover .employee__icon,
-.employee__link:focus .employee__icon {
-  fill: var(--bacnd-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-color);
+  }
+  &:hover .employee__icon,
+  &:focus .employee__icon {
+    fill: var(--bacnd-color);
+  }
 }
 
 .employee {
@@ -35,10 +36,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.employee:not(:last-child) {
-  margin-right: 30px;
-}
+
 .employee__box {
   padding: 30px 32px;
 }

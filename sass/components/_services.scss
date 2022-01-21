@@ -18,10 +18,12 @@
 }
 .services__content {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.services__content:not(:last-child) {
-  margin-right: 30px;
-}
+
 .services__titles {
   font-weight: 700;
   font-size: 14px;
